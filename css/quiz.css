@@ -1,0 +1,101 @@
+* {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #007bff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      padding: 20px;
+    }
+
+    .quiz-container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    button.oval {
+      padding: 20px 40px;
+      font-size: 1.5em;
+      border-radius: 30px;
+      min-width: 180px;
+      margin: 12px;
+      border: none;
+      background: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button.oval:hover {
+      background: #0044f2;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      background: #f9f9f9;
+      cursor: pointer;
+      text-align: left;
+      font-size: 1.2em;
+    }
+
+    #tempo {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      color: #00796b;
+      font-size: 1.5em;
+    }
+
+    .voltar-button {
+      background: #00796b;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2em;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .voltar-button:hover {
+      background: #e64a19;
+    }
+
+    @media (max-width: 600px) {
+      button.oval {
+        font-size: 1.2em;
+      }
+
+      label {
+        font-size: 1em;
+      }
+
+      #tempo,
+      h2 {
+        font-size: 1em;
+      }
+
+      .voltar-button {
+        font-size: 1em;
+        padding: 8px 16px;
+      }
+    }

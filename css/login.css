@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&display=swap');
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.login_header img {
+    width: 200px;
+}
+
+.login_header h1 {
+    color: black;
+    font-size: 3em;
+    animation: mudarCor 5s infinite;
+}
+
+.login_input {
+    border: 2px solid black;
+    border-radius: 8px;
+    color: black;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+}
+
+.login_button {
+    background-color: #0044f2;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login_button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/imagens/fundo login.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes mudarCor {
+    0%   { color: #4577c1; }
+    25%  { color: #6f9ffb; }
+    50%  { color: #7ca2c2; }
+    75%  { color: #182435; }
+    100% { color: black; }
+}
+
+
+@media (max-width: 768px) {
+    .login_header h1 {
+        font-size: 2.5em; 
+    }
+
+    .login_input {
+        padding: 10px; 
+        font-size: 0.9em; 
+    }
+
+    .login_button {
+        padding: 10px; 
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .login_header h1 {
+        font-size: 2em; 
+    }
+
+    .login_input {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .login_button {
+        padding: 8px; 
+        font-size: 0.8em; 
+    }
+}

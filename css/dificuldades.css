@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&display=swap');
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../imagens/game png.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.difficulty-container h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.difficulty-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.difficulty-buttons button {
+    padding: 15px 30px;
+    font-size: 1.em;
+    cursor: pointer;
+    background-color: #0044f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.difficulty-buttons button:hover {
+    background-color: #fedba3;
+    color: #0044f2;
+    box-shadow: 0 0 0 4px white, 0 0 0 8px #0044f2;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 768px) {
+    .difficulty-container h1 {
+        font-size: 1.3em; 
+    }
+
+    .difficulty-buttons button {
+        padding: 10px 20px;
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .difficulty-container h1 {
+        font-size: 0.8em; 
+    }
+
+    .difficulty-buttons button {
+        padding: 8px 15px; 
+        font-size: 0.7em; 
+    }
+}
