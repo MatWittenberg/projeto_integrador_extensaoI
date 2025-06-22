@@ -109,13 +109,14 @@ h2 {
 
 @media (max-width: 600px) {
   .quiz-container {
-    padding: 20px 15px;
+    padding: 20px 10px;
+    max-width: 95vw;
   }
 
   button.oval {
     font-size: 1.3em;
-    min-width: 160px;
-    padding: 16px 30px;
+    min-width: 140px;
+    padding: 14px 25px;
   }
 
   label {
@@ -136,12 +137,16 @@ h2 {
   }
 }
 
-
 @media (max-width: 400px) {
+  .quiz-container {
+    padding: 15px 8px;
+    max-width: 98vw;
+  }
+
   button.oval {
     font-size: 1.2em;
-    min-width: 140px;
-    padding: 14px 25px;
+    min-width: 120px;
+    padding: 12px 20px;
   }
 
   .voltar-button {
@@ -149,3 +154,4 @@ h2 {
     padding: 8px 16px;
   }
 }
+
