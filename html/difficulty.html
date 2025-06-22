@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Escolher Dificuldade</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="/css/dificuldades.css">
+</head>
+<body>
+    <div class="difficulty-container">
+        <div class="difficulty-buttons">
+            <button onclick="setDifficulty('facil')">Fácil</button>
+            <button onclick="setDifficulty('media')">Médio</button>
+            <button onclick="setDifficulty('dificil')">Difícil</button>
+        </div>
+    </div>
+    <audio id="jumpSound" src="/audios/mariojump.mp3" preload="auto"></audio> <!--Efeito sonoro do botão-->
+
+    <script>
+        function setDifficulty(level){
+
+            const som = document.getElementById('jumpSound'); // Efeito sonoro dos botões de níveis
+            som.currentTime = 0;
+            som.play();
+
+            setTimeout(() => {
+                localStorage.setItem('dificuldade', level);
+                window.location.href = 'game.html';
+            }, 500);
+
+            let musica;
+
+            if (level === 'facil') {
+                musica = 'crazytrain.mp3';
+            } else if (level === 'media') {
+                musica = 'thunderstruck.mp3';
+            } else if (level === 'dificil') {
+                musica = 'templeofhate.mp3';
+            }
+
+            localStorage.setItem('dificuldade', level);
+            localStorage.setItem('musicaFundo', musica);
+
+            setTimeout(() => {
+                window.location.href = 'game.html';
+            }, 500);
+        }
+
+    </script>
+</body>
+</html>
