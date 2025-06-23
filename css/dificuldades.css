@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('../imagens/gamedificuldade.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.difficulty-container h1 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.difficulty-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.difficulty-buttons button {
+    padding: 18px 36px;
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: #0044f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 120px;
+}
+
+.difficulty-buttons button:hover {
+    background-color: #fedba3;
+    color: #0044f2;
+    box-shadow: 0 0 0 4px white, 0 0 0 8px #0044f2;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .difficulty-container {
+    background-image: url('../imagens/game\ dificuldade2.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+    .difficulty-container h1 {
+        font-size: 2em;
+    }
+
+    .difficulty-buttons button {
+        padding: 16px 30px;
+        font-size: 1.1em;
+    }
+
+
+@media (max-width: 480px) {
+    .difficulty-container {
+    background-image: url('../imagens/game\ dificuldade2.jpg') !important;
+
+    }
+
+    .difficulty-container h1 {
+        font-size: 1.5em;
+    }
+
+    .difficulty-buttons {
+        gap: 15px;
+    }
+
+    .difficulty-buttons button {
+        padding: 14px 25px;
+        font-size: 1em;
+        min-width: 100px;
+    }
+}

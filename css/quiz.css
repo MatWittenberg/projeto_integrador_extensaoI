@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.btn-nivel, 
+.btn-voltar, 
+.btn-reiniciar {
+  padding: 12px 24px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-nivel {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-nivel:hover {
+  background: #0044f2;
+}
+
+.btn-voltar {
+  background: #00796b;
+  color: #fff;
+}
+
+.btn-voltar:hover {
+  background: #e64a19;
+}
+
+.btn-reiniciar {
+  background: #0044f2;
+  color: #fff;
+}
+
+.btn-reiniciar:hover {
+  background: #0033cc;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+#tempo {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h2 {
+  color: #00796b;
+  font-size: 1.8em;
+}
+
+@media (max-width: 600px) {
+  .btn-nivel, .btn-voltar, .btn-reiniciar {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 16px;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-nivel, .btn-voltar, .btn-reiniciar {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+}
